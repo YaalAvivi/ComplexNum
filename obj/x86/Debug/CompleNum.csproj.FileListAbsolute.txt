@@ -1,0 +1,72 @@
+C:\Users\user\AppData\Local\Temporary Projects\CompleNum\bin\Debug\CompleNum.exe
+C:\Users\user\AppData\Local\Temporary Projects\CompleNum\bin\Debug\CompleNum.pdb
+C:\Users\user\AppData\Local\Temporary Projects\CompleNum\obj\x86\Debug\CompleNum.Properties.Resources.resources
+C:\Users\user\AppData\Local\Temporary Projects\CompleNum\obj\x86\Debug\CompleNum.csproj.GenerateResource.Cache
+C:\Users\user\AppData\Local\Temporary Projects\CompleNum\obj\x86\Debug\CompleNum.exe
+C:\Users\user\AppData\Local\Temporary Projects\CompleNum\obj\x86\Debug\CompleNum.pdb
+C:\Users\user\AppData\Local\Temporary Projects\CompleNum\obj\x86\Debug\CompleNum.Form1.resources
+C:\Users\user\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.Main.resources
+C:\Users\user\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.BasicMain.resources
+C:\Users\user\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.BasicSolver.resources
+C:\Users\user\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.BasicExplantion.resources
+C:\Users\user\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.ComplexPlane.resources
+C:\Users\user\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.PracticeBasic.resources
+C:\Users\user\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.PracticeBasic2.resources
+C:\Users\יעל\Desktop\CompleNum (1)\CompleNum\CompleNum\obj\x86\Debug\CompleNum.exe
+C:\Users\יעל\Desktop\CompleNum (1)\CompleNum\CompleNum\obj\x86\Debug\CompleNum.pdb
+C:\Users\יעל\Desktop\CompleNum (1)\CompleNum\CompleNum\bin\Debug\CompleNum.exe
+C:\Users\יעל\Desktop\CompleNum (1)\CompleNum\CompleNum\bin\Debug\CompleNum.pdb
+C:\Users\יעל\Desktop\CompleNum (1)\CompleNum\CompleNum\obj\x86\Debug\CompleNum.csprojResolveAssemblyReference.cache
+C:\Users\יעל\Desktop\CompleNum (1)\CompleNum\CompleNum\obj\x86\Debug\CompleNum.BasicExplantion.resources
+C:\Users\יעל\Desktop\CompleNum (1)\CompleNum\CompleNum\obj\x86\Debug\CompleNum.BasicMain.resources
+C:\Users\יעל\Desktop\CompleNum (1)\CompleNum\CompleNum\obj\x86\Debug\CompleNum.BasicSolver.resources
+C:\Users\יעל\Desktop\CompleNum (1)\CompleNum\CompleNum\obj\x86\Debug\CompleNum.ComplexPlane.resources
+C:\Users\יעל\Desktop\CompleNum (1)\CompleNum\CompleNum\obj\x86\Debug\CompleNum.Main.resources
+C:\Users\יעל\Desktop\CompleNum (1)\CompleNum\CompleNum\obj\x86\Debug\CompleNum.PracticeBasic.resources
+C:\Users\יעל\Desktop\CompleNum (1)\CompleNum\CompleNum\obj\x86\Debug\CompleNum.PracticeBasic2.resources
+C:\Users\יעל\Desktop\CompleNum (1)\CompleNum\CompleNum\obj\x86\Debug\CompleNum.Properties.Resources.resources
+C:\Users\יעל\Desktop\CompleNum (1)\CompleNum\CompleNum\obj\x86\Debug\CompleNum.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\CompleNum\CompleNum\bin\Debug\ComplexNumbers.exe
+C:\Users\user\Desktop\CompleNum\CompleNum\bin\Debug\ComplexNumbers.pdb
+C:\Users\user\Desktop\CompleNum\CompleNum\obj\x86\Debug\ComplexNumers.Properties.Resources.resources
+C:\Users\user\Desktop\CompleNum\CompleNum\obj\x86\Debug\ComplexNumbers.exe
+C:\Users\user\Desktop\CompleNum\CompleNum\obj\x86\Debug\ComplexNumbers.pdb
+C:\Users\user\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.BasicShowAnswers.resources
+C:\Users\יעל\Desktop\CompleNum\CompleNum\obj\x86\Debug\ComplexNumbers.exe
+C:\Users\יעל\Desktop\CompleNum\CompleNum\obj\x86\Debug\ComplexNumbers.pdb
+C:\Users\יעל\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.csprojResolveAssemblyReference.cache
+C:\Users\יעל\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.BasicExplantion.resources
+C:\Users\יעל\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.BasicMain.resources
+C:\Users\יעל\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.BasicShowAnswers.resources
+C:\Users\יעל\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.BasicSolver.resources
+C:\Users\יעל\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.ComplexPlane.resources
+C:\Users\יעל\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.Main.resources
+C:\Users\יעל\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.PracticeBasic.resources
+C:\Users\יעל\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.PracticeBasic2.resources
+C:\Users\יעל\Desktop\CompleNum\CompleNum\obj\x86\Debug\ComplexNumers.Properties.Resources.resources
+C:\Users\יעל\Desktop\CompleNum\CompleNum\obj\x86\Debug\CompleNum.csproj.GenerateResource.Cache
+C:\Users\יעל\Desktop\CompleNum\CompleNum\bin\Debug\ComplexNumbers.exe
+C:\Users\יעל\Desktop\CompleNum\CompleNum\bin\Debug\ComplexNumbers.pdb
+D:\CompleNum\CompleNum\obj\x86\Debug\CompleNum.csproj.AssemblyReference.cache
+D:\CompleNum\CompleNum\obj\x86\Debug\CompleNum.csproj.SuggestedBindingRedirects.cache
+D:\CompleNum\CompleNum\obj\x86\Debug\CompleNum.BasicExplantion.resources
+D:\CompleNum\CompleNum\obj\x86\Debug\CompleNum.BasicMain.resources
+D:\CompleNum\CompleNum\obj\x86\Debug\CompleNum.BasicShowAnswers.resources
+D:\CompleNum\CompleNum\obj\x86\Debug\ComplexNumers.Progression.resources
+D:\CompleNum\CompleNum\obj\x86\Debug\ComplexNumers.Quadric.resources
+D:\CompleNum\CompleNum\obj\x86\Debug\ComplexNumers.ElectricPower.resources
+D:\CompleNum\CompleNum\obj\x86\Debug\CompleNum.QuadraticSolver.resources
+D:\CompleNum\CompleNum\obj\x86\Debug\CompleNum.ComplexPlane.resources
+D:\CompleNum\CompleNum\obj\x86\Debug\CompleNum.Main.resources
+D:\CompleNum\CompleNum\obj\x86\Debug\CompleNum.PracticeBasic.resources
+D:\CompleNum\CompleNum\obj\x86\Debug\CompleNum.PracticeBasic2.resources
+D:\CompleNum\CompleNum\obj\x86\Debug\ComplexNumers.Properties.Resources.resources
+D:\CompleNum\CompleNum\obj\x86\Debug\CompleNum.csproj.GenerateResource.cache
+D:\CompleNum\CompleNum\obj\x86\Debug\CompleNum.csproj.CoreCompileInputs.cache
+D:\CompleNum\CompleNum\bin\Debug\ComplexNumbers.exe.config
+D:\CompleNum\CompleNum\bin\Debug\ComplexNumbers.exe
+D:\CompleNum\CompleNum\bin\Debug\ComplexNumbers.pdb
+D:\CompleNum\CompleNum\obj\x86\Debug\ComplexNumbers.exe
+D:\CompleNum\CompleNum\obj\x86\Debug\ComplexNumbers.pdb
