@@ -7,40 +7,64 @@ namespace CompleNum
 {
     static class Program
     {
-        public static double Det2a1(double[,] arr, double[] arr2)
+        public static string Det2a1(string[,] arr, string[] arr2)
+            //חישוב נעלם מספר 1 עם 2 נעלמים בעזרת שיטת דטרמיננט
         {
-            double det = arr[0, 0] * arr[1, 1] - arr[1, 0] * arr[0, 1];
-            double detX = arr2[0] * arr[1, 1] - arr[0, 1] * arr2[1];
-            return detX / det;
+            string det = Program.SubstractTwoComplex(Program.MultiTwoComplex(arr[0, 0], arr[1, 1]), Program.MultiTwoComplex(arr[1, 0] , arr[0, 1]));
+            string detX = Program.SubstractTwoComplex(Program.MultiTwoComplex(arr2[0] , arr[1, 1]) ,Program.MultiTwoComplex(arr[0, 1] , arr2[1]));
+            return Program.DivideTwoComplex(detX,det);
         }
-        public static double Det2a2(double[,] arr, double[] arr2)
+        public static string Det2a2(string[,] arr, string[] arr2)
+        //חישוב נעלם מספר 2 עם 2 נעלמים בעזרת שיטת דטרמיננט
         {
-            double det = arr[0, 0] * arr[1, 1] - arr[1, 0] * arr[0, 1];
-            double detX = arr[0,0] * arr2[1] - arr2[0] * arr[1,0];
-            return detX / det;
+            string det = Program.SubstractTwoComplex(Program.MultiTwoComplex(arr[0, 0] , arr[1, 1]) , Program.MultiTwoComplex(arr[1, 0] , arr[0, 1]));
+            string detX = Program.SubstractTwoComplex(Program.MultiTwoComplex(arr[0,0] , arr2[1]) , Program.MultiTwoComplex(arr2[0] , arr[1,0]));
+            return Program.DivideTwoComplex(detX, det);
         }
-        public static double Det3a1(double[,] arr, double[] arr2)
+        public static string Det3a1(string[,] arr, string[] arr2)
         {
-            double det = arr[0, 0] * arr[1, 1] * arr[2, 2] + arr[0, 1] * arr[1, 2] * arr[2, 0] + arr[1, 0] * arr[2, 1] * arr[0, 2] - (arr[0, 2] * arr[1, 1] * arr[2, 0] + arr[0, 1] * arr[1, 0] * arr[2, 2] + arr[2, 1] * arr[1, 2] * arr[0, 0]);
-            double detX = arr2[0] * arr[1, 1] * arr[2, 2] + arr[0, 1] * arr[1, 2] * arr2[2] + arr2[1] * arr[2, 1] * arr[0, 2] - (arr[0, 2] * arr[1, 1] * arr2[2] + arr[0, 1] * arr2[1] * arr[2, 2] + arr[2, 1] * arr[1, 2] * arr2[0]);
-            return detX / det;
+            //חישוב נעלם מספר 1 עם 3 נעלמים בעזרת שיטת דטרמיננט
+            string det = Program.SubstractTwoComplex(Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 0],Program.MultiTwoComplex(arr[1, 1] , arr[2, 2])) ,
+                Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 1],Program.MultiTwoComplex(arr[1, 2] , arr[2, 0])) , Program.MultiTwoComplex(arr[1, 0],Program.MultiTwoComplex(arr[2, 1] , arr[0, 2])))),
+                (Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 2],Program.MultiTwoComplex(arr[1, 1] , arr[2, 0])) ,
+                Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 1],Program.MultiTwoComplex(arr[1, 0] , arr[2, 2])) , Program.MultiTwoComplex(arr[1, 2],Program.MultiTwoComplex(arr[2, 1] , arr[0, 0]))))));
+            string detX = Program.SubstractTwoComplex(Program.AddTwoComplex(Program.MultiTwoComplex(arr2[0], Program.MultiTwoComplex(arr[1, 1], arr[2, 2])),
+                Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 1], Program.MultiTwoComplex(arr[1, 2], arr2[2])), Program.MultiTwoComplex(arr2[1], Program.MultiTwoComplex(arr[2, 1], arr[0, 2])))),
+                (Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 2], Program.MultiTwoComplex(arr[1, 1], arr2[2])),
+                Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 1], Program.MultiTwoComplex(arr2[1], arr[2, 2])), Program.MultiTwoComplex(arr[1, 2], Program.MultiTwoComplex(arr[2, 1], arr2[0]))))));
+            return Program.DivideTwoComplex(detX,det);
         }
-        public static double Det3a2(double[,] arr, double[] arr2)
+        public static string Det3a2(string[,] arr, string[] arr2)
         {
-            double det = arr[0, 0] * arr[1, 1] * arr[2, 2] + arr[0, 1] * arr[1, 2] * arr[2, 0] + arr[1, 0] * arr[2, 1] * arr[0, 2] - (arr[0, 2] * arr[1, 1] * arr[2, 0] + arr[0, 1] * arr[1, 0] * arr[2, 2] + arr[2, 1] * arr[1, 2] * arr[0, 0]);
-            double detX = arr[0, 0] * arr2[1] * arr[2, 2] + arr2[0] * arr[1, 2] * arr[2, 0] + arr[1, 0] * arr2[2] * arr[0, 2] - (arr[0, 2] * arr2[1] * arr[2, 0] + arr2[0] * arr[1, 0] * arr[2, 2] + arr2[2] * arr[1, 2] * arr[0, 0]);
-            return detX / det;
+            //חישוב נעלם מספר 2 עם 3 נעלמים בעזרת שיטת דטרמיננט
+        string det = Program.SubstractTwoComplex(Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 0],Program.MultiTwoComplex(arr[1, 1] , arr[2, 2])) ,
+                Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 1],Program.MultiTwoComplex(arr[1, 2] , arr[2, 0])) , Program.MultiTwoComplex(arr[1, 0],Program.MultiTwoComplex(arr[2, 1] , arr[0, 2])))),
+                (Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 2],Program.MultiTwoComplex(arr[1, 1] , arr[2, 0])) ,
+                Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 1],Program.MultiTwoComplex(arr[1, 0] , arr[2, 2])) , Program.MultiTwoComplex(arr[1, 2],Program.MultiTwoComplex(arr[2, 1] , arr[0, 0]))))));
+            string detX = Program.SubstractTwoComplex(Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 0],Program.MultiTwoComplex(arr2[1] , arr[2, 2])) ,
+                Program.AddTwoComplex(Program.MultiTwoComplex(arr2[0],Program.MultiTwoComplex(arr[1, 2] , arr[2, 0])) , Program.MultiTwoComplex(arr[1, 0],Program.MultiTwoComplex(arr2[2] , arr[0, 2])))),
+                (Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 2],Program.MultiTwoComplex(arr2[1] , arr[2, 0])) ,
+                Program.AddTwoComplex(Program.MultiTwoComplex(arr2[0],Program.MultiTwoComplex(arr[1, 0] , arr[2, 2])) , Program.MultiTwoComplex(arr2[2],Program.MultiTwoComplex(arr[1, 2] , arr[0, 0]))))));
+            return Program.DivideTwoComplex(detX,det);
         }
-        public static double Det3a3(double[,] arr, double[] arr2)
+        public static string Det3a3(string[,] arr, string[] arr2)
         {
-            double det = arr[0, 0] * arr[1, 1] * arr[2, 2] + arr[0, 1] * arr[1, 2] * arr[2, 0] + arr[1, 0] * arr[2, 1] * arr[0, 2] - (arr[0, 2] * arr[1, 1] * arr[2, 0] + arr[0, 1] * arr[1, 0] * arr[2, 2] + arr[2, 1] * arr[1, 2] * arr[0, 0]);
-            double detX = arr[0, 0] * arr[1, 1] * arr2[2] + arr[0, 1] * arr2[1] * arr[2, 0] + arr[1, 0] * arr[2, 1] * arr2[0] - (arr2[0] * arr[1, 1] * arr[2, 0] + arr[0, 1] * arr[1, 0] * arr2[2] + arr[2, 1] * arr2[1] * arr[0, 0]);
-            return detX / det;
+            //חישוב נעלם מספר 3 עם 3 נעלמים בעזרת שיטת דטרמיננט
+            string det = Program.SubstractTwoComplex(Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 0], Program.MultiTwoComplex(arr[1, 1], arr[2, 2])),
+                Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 1], Program.MultiTwoComplex(arr[1, 2], arr[2, 0])), Program.MultiTwoComplex(arr[1, 0], Program.MultiTwoComplex(arr[2, 1], arr[0, 2])))),
+                (Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 2], Program.MultiTwoComplex(arr[1, 1], arr[2, 0])),
+                Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 1], Program.MultiTwoComplex(arr[1, 0], arr[2, 2])), Program.MultiTwoComplex(arr[1, 2], Program.MultiTwoComplex(arr[2, 1], arr[0, 0]))))));
+            string detX = Program.SubstractTwoComplex(Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 0], Program.MultiTwoComplex(arr[1, 1], arr2[2])),
+                Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 1], Program.MultiTwoComplex(arr2[1], arr[2, 0])), Program.MultiTwoComplex(arr[1, 0], Program.MultiTwoComplex(arr[2, 1], arr2[0])))),
+                (Program.AddTwoComplex(Program.MultiTwoComplex(arr2[0], Program.MultiTwoComplex(arr[1, 1], arr[2, 0])),
+                Program.AddTwoComplex(Program.MultiTwoComplex(arr[0, 1], Program.MultiTwoComplex(arr[1, 0], arr2[2])), Program.MultiTwoComplex(arr[2, 1], Program.MultiTwoComplex(arr2[1], arr[0, 0]))))));
+            return Program.DivideTwoComplex(detX, det) ;
         }
         public static string QadraticEquationPositive(string a, string b, string c)
         {
+            //חישוב משוואה ריבועית (חיבור)
             string Delta = SubstractTwoComplex(MultiTwoComplex(b, b), MultiTwoComplex("4", MultiTwoComplex(a, c)));
-            if (GetImaginryPart(Delta) == 0)
+            if (GetImaginryPart(Delta) == 0)//אם דלתא היא מספר בלבד, ללא חלק מדומה
                 Delta = "" + (Math.Sqrt(Convert.ToDouble(Delta)));
             else
                 Delta = "" + Root(Delta);
@@ -51,8 +75,9 @@ namespace CompleNum
         }
         public static string QadraticEquationNegtaive(string a, string b, string c)
         {
+            //חישוב משוואה ריבועית (חיובי)
             string Delta = SubstractTwoComplex(MultiTwoComplex(b, b), MultiTwoComplex("4", MultiTwoComplex(a, c)));
-            if (GetImaginryPart(Delta) == 0)
+            if (GetImaginryPart(Delta) == 0)//אם דלתא היא מספר בלבד, ללא חלק מדומה
                 Delta = "" + (Math.Sqrt(Convert.ToDouble(Delta)));
             else
                 Delta = "" + Root(Delta);
@@ -63,22 +88,25 @@ namespace CompleNum
         }
         public static string Root(string z)
         {
+            //שורש ריבועי של מספר מרוכב
             double a = GetRealPart(z);
             double b = GetImaginryPart(z);
-            double y = Math.Sqrt((-a + Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2))) / 2);
-            double x=b/(2*y);
+            double y = Math.Sqrt((-a + Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2))) / 2);//חלק מדומה לפי נוסחה
+            double x = b / (2 * y);//חלק ממשי לפי נוסחה
             return createImaginryNumber(x, y);
 
         }
         public static double GetR(string z)
         {
+            //מחזיר את הרדיוס (הגודל) של מספר מרוכב
             return returnFullNum(Math.Sqrt(Math.Pow(GetRealPart(z), 2) + Math.Pow(GetImaginryPart(z), 2)));
         }
         public static double GetDegree(string z)
         {
+            //מחזיר את הזווית של המספר המרוכב
             double real = GetRealPart(z), imaginry = GetImaginryPart(z),angle=0;
             
-            if (real > 0)
+            if (real > 0)//בדיקת הרביע של המספר
             {
                 if (imaginry >= 0)
                     angle=(Math.Atan(imaginry / real));
@@ -99,9 +127,10 @@ namespace CompleNum
         }
         public static string createPolarImaginryNumberRad(double real, double imaginry)
         {
+            //יצירת מספר מרוכב בצורה פולרית ברדיאנים
             double r = returnFullNum(Math.Sqrt(Math.Pow(real, 2) + Math.Pow(imaginry, 2)));
             double angle=-1;
-            if (real > 0)
+            if (real > 0)//בדיקת הרביע של המספר
             {
                 if (imaginry >= 0)
                     angle = (Math.Atan(imaginry / real));
@@ -135,9 +164,10 @@ namespace CompleNum
         }
         public static string createPolarImaginryNumberDeg(double real, double imaginry)
         {
+            //יצירת מספר מרוכב בצורה פולרית ברדיאנים
             double r = returnFullNum(Math.Sqrt(Math.Pow(real, 2) + Math.Pow(imaginry, 2)));
             double angle = -1;
-            if (real > 0)
+            if (real > 0)//בדיקת הרביע של המספר
             {
                 if(imaginry>=0)
                     angle = (Math.Atan(imaginry / real));
@@ -158,6 +188,7 @@ namespace CompleNum
         }
         public static double returnFullNum(double num)
         {
+            //מחזיר מספר עם 2 ספרו לאחר הנקודה העשרונית
             int num2 = (int)(num * 100);
             double num3 = (double)(num2);
             double num4 = num3 / 100;
@@ -165,24 +196,25 @@ namespace CompleNum
         }
         public static double GetImaginryPart(string z)
         {
+            //מחזיר את החלק המדומה של מספר מרוכב
             string Imaginry = "";
-            int g=-1;
-            for (int i = 0; i < z.Length; i++)
+            int g=-1;//מיקום החיבור או החיסור
+            for (int i = 0; i < z.Length; i++)//בדיקה היכן נמצא הפלוס או המינוס 
             {
-                if ((z[i] != '0') && ((z[i] == '+') || (z[i] == '-'))&&(!((z[i]=='-')&&(i==0))))
+                if ((z[i] != '0') && ((z[i] == '+') || (z[i] == '-'))&&(!((z[i]=='-')&&(i==0))))// בדיקה שנמצא פלוס או מינוס, והאם הוא לא מסמל שליליות של האיבר הראשון
                     g = i;
             }
-            if (g == -1)
+            if (g == -1)//אם לא נמצא פלוס או מינוס או איבר ראשון שלילי
             {
                 bool IfI = false;
-                for (int i = 0; i < z.Length; i++)
+                for (int i = 0; i < z.Length; i++)//בודק אם יש i במספר המרוכב (סטרינג)
                     if (z[i] == 'i')
                         IfI = true;
                 if (IfI)
                 {
-                    if ((z.Length == 1)&&(z[0]=='i'))
+                    if ((z.Length == 1)&&(z[0]=='i'))//אם המספר הוא רק i
                         return 1;
-                    else if ((z.Length == 2) && (z[0] == '-') && (z[1]=='i'))
+                    else if ((z.Length == 2) && (z[0] == '-') && (z[1]=='i'))//אם המספר הוא רק -i
                         return -1;
                     else
                         return Convert.ToDouble(z.Substring(0, z.Length - 1));
@@ -192,7 +224,7 @@ namespace CompleNum
             }
             else
             {
-                Imaginry = z.Substring(g, z.Length - g - 1);
+                Imaginry = z.Substring(g, z.Length - g - 1);//אם נמצא פלוס או מינוס שאינו מייצג איבר ראשון שלילי
                 if (Imaginry == "+")
                     return 1;
                 else if (Imaginry == "-")
@@ -202,17 +234,18 @@ namespace CompleNum
         }
         public static double GetRealPart(string z)
         {
+            //מחזיר את החלק הממשי של מספר מרוכב
             string Real = "";
-            int g = -1;
+            int g = -1;//מיקום החיבור או החיסור
             for (int i = 0; i < z.Length; i++)
             {
-                if ((z[i] != 0) && ((z[i] == '+') || (z[i] == '-')))
+                if ((z[i] != 0) && ((z[i] == '+') || (z[i] == '-')))// בדיקה שנמצא פלוס או מינוס
                     g = i-1;
             }
-            if (g == -1)
+            if (g == -1)//אם לא נמצא פלוס או מינוס או איבר ראשון שלילי
             {
                 bool IfI = false;
-                for (int i = 0; i < z.Length; i++)
+                for (int i = 0; i < z.Length; i++)//בודק אם יש i במספר המרוכב (סטרינג)
                     if (z[i] == 'i') 
                         IfI=true;
                 if (IfI)
@@ -229,6 +262,7 @@ namespace CompleNum
         }
         public static string GetConjugate(string z)
         {
+            //מחזיר את המספר הצמוד למספר המרוכב
             double Imaginry = GetImaginryPart(z);
             if (Imaginry > 0)
                 return Convert.ToString(GetRealPart(z) + "-" + Imaginry+"i");
@@ -239,6 +273,7 @@ namespace CompleNum
         }
         public static string createImaginryNumber(double real, double imaginry)
         {
+            //יצירת מספר מדומה מחלק ממשי וחלק מדומה
             string complex = "";
             if (real == 0)
             {
@@ -270,18 +305,21 @@ namespace CompleNum
         }
         public static string AddTwoComplex(string z1, string z2)
     {
+            //חיבור 2 מספרים מרוכבים
         double rz1 = GetRealPart(z1), rz2 = GetRealPart(z2), iz1 = GetImaginryPart(z1), iz2 = GetImaginryPart(z2);
         string z1z2 = createImaginryNumber(rz1 + rz2, iz1 + iz2);
         return z1z2;
     }
         public static string SubstractTwoComplex(string z1, string z2)
         {
+            //חיסור 2 מספרים מרוכבים
             double rz1 = GetRealPart(z1), rz2 = GetRealPart(z2), iz1 = GetImaginryPart(z1), iz2 = GetImaginryPart(z2);
             string z1z2 = createImaginryNumber(rz1 - rz2, iz1 - iz2);
             return z1z2;
         }
         public static string MultiTwoComplex(string z1, string z2)
         {
+            //כפל 2 מספרים מרוכבים
             double rz1 = CompleNum.Program.GetRealPart(z1);
             double rz2 = CompleNum.Program.GetRealPart(z2);
             double iz1 = CompleNum.Program.GetImaginryPart(z1);
@@ -293,6 +331,7 @@ namespace CompleNum
         }
         public static string DivideTwoComplex(string z1, string z2)
         {
+            //חילוק 2 מספרים מרוכבים
             string numerator = "", z1z2;
             string z2c = Program.GetConjugate(z2);
             double rz1, rz2, iz1, iz2, NumReal, NumImaginry, izc, divider, real, imaginry;

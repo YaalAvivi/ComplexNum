@@ -37,6 +37,7 @@
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(316, 32);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -51,6 +52,7 @@
             this.ComplexNum.Name = "ComplexNum";
             this.ComplexNum.Size = new System.Drawing.Size(100, 20);
             this.ComplexNum.TabIndex = 1;
+            this.ComplexNum.TextChanged += new System.EventHandler(this.ComplexNum_TextChanged);
             // 
             // label4
             // 
@@ -78,6 +80,7 @@
             this.textBox1.Size = new System.Drawing.Size(24, 20);
             this.textBox1.TabIndex = 10;
             this.textBox1.Text = "1";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // ComplexPlane
             // 

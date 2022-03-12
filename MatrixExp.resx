@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        a1uaArOhKRuQlIxpQOUKFAf/2Q==
+</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>1.Calculate the determinant of the matrix
+(In the given matrix: 1X7X1+6X2X3+3X2X5-
+(3X7X3+2X5X1+1X2X6=73-85=-12).
+2. Switch the unknown's row in the 
+answer's row.
+3. Calculate the determinant of the new 
+matrix.
+4. Divide the new determinant in the 
+old one to get the unknow's value.
+(NOTICE: if determinant of the main matrix=0,
+this method will not work.)</value>
+  </data>
+</root>

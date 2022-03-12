@@ -18,7 +18,7 @@ namespace CompleNum
 
         private void button1_Click(object sender, EventArgs e)
         {
-            QuadraticSolver BS = new QuadraticSolver();
+            BasicSolver BS = new BasicSolver();
             this.Hide();
             BS.ShowDialog();
             this.Show();
@@ -46,6 +46,14 @@ namespace CompleNum
             ComplexNumers.ElectricPower EP = new ComplexNumers.ElectricPower();
             this.Hide();
             EP.ShowDialog();
+            this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ComplexNumers.Matrix M = new ComplexNumers.Matrix();
+            this.Hide();
+            M.ShowDialog();
             this.Close();
         }
 

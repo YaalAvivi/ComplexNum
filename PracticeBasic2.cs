@@ -70,6 +70,10 @@ namespace CompleNum
             {               
                 timer1.Stop();
                 MessageBox.Show("Time out! You were correct on " + CountRight + " questions out of " + questions);
+                BasicShowAnswers BSA = new BasicShowAnswers();
+                this.Hide();
+                BSA.ShowDialog();
+                this.Close();
             }
         }
 

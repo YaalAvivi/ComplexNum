@@ -39,10 +39,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BasicHeadline = new System.Windows.Forms.Label();
             this.Back = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(193, 198);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -66,6 +68,7 @@
             this.c.Name = "c";
             this.c.Size = new System.Drawing.Size(67, 20);
             this.c.TabIndex = 29;
+            this.c.TextChanged += new System.EventHandler(this.c_TextChanged);
             // 
             // label2
             // 
@@ -82,6 +85,7 @@
             this.b.Name = "b";
             this.b.Size = new System.Drawing.Size(67, 20);
             this.b.TabIndex = 27;
+            this.b.TextChanged += new System.EventHandler(this.b_TextChanged);
             // 
             // a
             // 
@@ -89,6 +93,7 @@
             this.a.Name = "a";
             this.a.Size = new System.Drawing.Size(67, 20);
             this.a.TabIndex = 26;
+            this.a.TextChanged += new System.EventHandler(this.a_TextChanged);
             // 
             // label1
             // 
@@ -119,11 +124,22 @@
             this.Back.UseVisualStyleBackColor = true;
             this.Back.Click += new System.EventHandler(this.Back_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(20, 243);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(336, 26);
+            this.label4.TabIndex = 32;
+            this.label4.Text = "NOTICE: if the solutions include huge numbers (such as with 8 digitis),\r\nthe solu" +
+                "tion is not true and can\'t be calculated.";
+            // 
             // Quadric
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(474, 351);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.c);
@@ -144,7 +160,6 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button Back;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ToolTip ComplexNumberEx;
         private System.Windows.Forms.TextBox c;
@@ -153,6 +168,7 @@
         private System.Windows.Forms.TextBox a;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label BasicHeadline;
-        
+        private System.Windows.Forms.Button Back;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -106,7 +106,7 @@ namespace ComplexNumers
                 string q = DQ;
                 for (int i = 2; i <= Convert.ToDouble(s.Text); i++)
                     DQ = CompleNum.Program.MultiTwoComplex(DQ, q);
-                DQ = CompleNum.Program.SubstractTwoComplex(DQ,"1");
+                DQ = CompleNum.Program.AddTwoComplex(DQ,"1");
                 AnsweA = CompleNum.Program.MultiTwoComplex(DQ, A1);
                 AnsweA = CompleNum.Program.DivideTwoComplex(AnsweA, CompleNum.Program.SubstractTwoComplex(q, "1"));
             }

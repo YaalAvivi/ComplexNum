@@ -44,24 +44,7 @@ namespace CompleNum
             int zoom = Convert.ToInt16(textBox1.Text);
             real *= zoom;
             imaginry *= zoom;
-            //if (zoom2.Checked == true)
-            //{
-            //    real *= 2;
-            //    imaginry *= 2;
-            //}
-            //else if (zoom10.Checked == true)
-            //{
-            //    real *= 10;
-            //    imaginry *= 10;
-            //}
-            //    while (real > 203)
-            //        real -= 203;
-            //    while (real < -200)
-            //        real += 200;
-            //    while (imaginry > 150)
-            //        imaginry -= 150;
-            //    while (imaginry < -90)
-            //        imaginry += 90;
+
             real += 247;
             imaginry += 247;
             imaginry *= -1;
@@ -78,9 +61,9 @@ namespace CompleNum
 
         private void Back_Click(object sender, EventArgs e)
         {
-            if (QuadraticSolver.flag)
+            if (BasicSolver.flag)
             {
-                QuadraticSolver BS = new QuadraticSolver();
+                BasicSolver BS = new BasicSolver();
                 this.Hide();
                 BS.ShowDialog();
                 this.Close();
@@ -96,8 +79,24 @@ namespace CompleNum
 
         private void ComplexPlane_Load(object sender, EventArgs e)
         {
-            if (QuadraticSolver.flag)
-                ComplexNum.Text = QuadraticSolver.num;
+            if (BasicSolver.flag)
+                ComplexNum.Text = BasicSolver.num;
+        }
+
+        private void ComplexNum_TextChanged(object sender, EventArgs e)
+        {
+            if (ComplexNum.Text == "")
+                button1.Enabled = false;
+            else
+                button1.Enabled = true;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+                button1.Enabled = false;
+            else
+                button1.Enabled = true;
         }
 
     }

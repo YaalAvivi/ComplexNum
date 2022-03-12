@@ -9,11 +9,11 @@ using System.Windows.Forms;
 
 namespace CompleNum
 {
-    public partial class QuadraticSolver : Form
+    public partial class BasicSolver : Form
     {
         public static bool flag = false;
         public static string num;
-        public QuadraticSolver()
+        public BasicSolver()
         {
             
             InitializeComponent();
@@ -177,6 +177,46 @@ namespace CompleNum
                     this.Hide();
                     CP.ShowDialog();
                     this.Close();
+                }
+
+                private void zForm1_TextChanged(object sender, EventArgs e)
+                {
+                    if (zForm1.Text == "" || zForm2.Text == "")
+                    {
+                        plus.Enabled = false;
+                        minus.Enabled = false;
+                        multi.Enabled = false;
+                        fraction.Enabled = false;
+                        ComplPlan.Enabled = false;
+                    }
+                    else
+                    {
+                        plus.Enabled = true;
+                        minus.Enabled = true;
+                        multi.Enabled = true;
+                        fraction.Enabled = true;
+                        ComplPlan.Enabled = true;
+                    }
+                }
+
+                private void zForm2_TextChanged(object sender, EventArgs e)
+                {
+                    if (zForm1.Text == "" || zForm2.Text == "")
+                    {
+                        plus.Enabled = false;
+                        minus.Enabled = false;
+                        multi.Enabled = false;
+                        fraction.Enabled = false;
+                        ComplPlan.Enabled = false;
+                    }
+                    else
+                    {
+                        plus.Enabled = true;
+                        minus.Enabled = true;
+                        multi.Enabled = true;
+                        fraction.Enabled = true;
+                        ComplPlan.Enabled = true;
+                    }
                 }
 
 

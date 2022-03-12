@@ -26,7 +26,7 @@ namespace CompleNum
 
         private void BasicSolver_Click(object sender, EventArgs e)
         {
-            QuadraticSolver BS = new QuadraticSolver();
+            BasicSolver BS = new BasicSolver();
             this.Hide();
             BS.ShowDialog();
             this.Close();
@@ -50,6 +50,7 @@ namespace CompleNum
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             ComplexNumers.Quadric Q = new ComplexNumers.Quadric();
             this.Hide();
             Q.ShowDialog();

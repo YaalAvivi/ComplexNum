@@ -1,6 +1,6 @@
 ﻿namespace CompleNum
 {
-    partial class QuadraticSolver
+    partial class BasicSolver
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuadraticSolver));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BasicSolver));
             this.plus = new System.Windows.Forms.Button();
             this.minus = new System.Windows.Forms.Button();
             this.zForm1 = new System.Windows.Forms.TextBox();
@@ -49,11 +49,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ComplPlan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // plus
             // 
+            this.plus.Enabled = false;
             this.plus.Location = new System.Drawing.Point(140, 167);
             this.plus.Name = "plus";
             this.plus.Size = new System.Drawing.Size(38, 23);
@@ -64,6 +65,7 @@
             // 
             // minus
             // 
+            this.minus.Enabled = false;
             this.minus.Location = new System.Drawing.Point(200, 167);
             this.minus.Name = "minus";
             this.minus.Size = new System.Drawing.Size(38, 23);
@@ -78,6 +80,7 @@
             this.zForm1.Name = "zForm1";
             this.zForm1.Size = new System.Drawing.Size(100, 20);
             this.zForm1.TabIndex = 2;
+            this.zForm1.TextChanged += new System.EventHandler(this.zForm1_TextChanged);
             // 
             // zForm2
             // 
@@ -85,6 +88,7 @@
             this.zForm2.Name = "zForm2";
             this.zForm2.Size = new System.Drawing.Size(100, 20);
             this.zForm2.TabIndex = 3;
+            this.zForm2.TextChanged += new System.EventHandler(this.zForm2_TextChanged);
             // 
             // label1
             // 
@@ -126,6 +130,7 @@
             // 
             // multi
             // 
+            this.multi.Enabled = false;
             this.multi.Location = new System.Drawing.Point(260, 167);
             this.multi.Name = "multi";
             this.multi.Size = new System.Drawing.Size(38, 23);
@@ -136,6 +141,7 @@
             // 
             // fraction
             // 
+            this.fraction.Enabled = false;
             this.fraction.Location = new System.Drawing.Point(320, 167);
             this.fraction.Name = "fraction";
             this.fraction.Size = new System.Drawing.Size(38, 23);
@@ -197,8 +203,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)
-                            | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label3.Location = new System.Drawing.Point(0, 73);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 13);
@@ -213,34 +219,35 @@
             this.label5.Size = new System.Drawing.Size(169, 52);
             this.label5.TabIndex = 17;
             this.label5.Text = "Enter the number in the form \r\na+bi,where \"i\"is the last character.\r\nIf b=0, writ" +
-                "e the value of a\r\n(same goes for a=0).\r\n";
+    "e the value of a\r\n(same goes for a=0).\r\n";
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic)
-                            | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(216, 256);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(100, 23);
             this.textBox1.TabIndex = 18;
             // 
-            // button1
+            // ComplPlan
             // 
-            this.button1.Location = new System.Drawing.Point(216, 285);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 52);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Show On \r\nComplex Plane\r\n";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ComplPlan.Enabled = false;
+            this.ComplPlan.Location = new System.Drawing.Point(216, 285);
+            this.ComplPlan.Name = "ComplPlan";
+            this.ComplPlan.Size = new System.Drawing.Size(95, 52);
+            this.ComplPlan.TabIndex = 19;
+            this.ComplPlan.Text = "Show On \r\nComplex Plane\r\n";
+            this.ComplPlan.UseVisualStyleBackColor = true;
+            this.ComplPlan.Click += new System.EventHandler(this.button1_Click);
             // 
-            // BasicSolver
+            // QuadraticSolver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 361);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ComplPlan);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -262,7 +269,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "BasicSolver";
+            this.Name = "QuadraticSolver";
             this.Text = "Basic Solver";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -290,7 +297,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ComplPlan;
     }
 }
 
